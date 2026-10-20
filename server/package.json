@@ -1,0 +1,13 @@
+{
+  "name": "eclipse-server-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter only; not connected to Android prototype",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
