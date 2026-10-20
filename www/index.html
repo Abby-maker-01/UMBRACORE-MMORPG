@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <title>ECLIPSE: REALMS OF RUIN</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game-shell">
+    <canvas id="world" aria-label="Dunia ECLIPSE"></canvas>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">☾</span><div><strong>ECLIPSE</strong><small>REALMS OF RUIN</small></div></div>
+      <div class="player-card"><div class="portrait">✦</div><div class="player-info"><strong id="player-name">Astra <em>FOUNDER</em></strong><small id="player-class">Wanderer · Lv. 07</small><div class="bar hp"><i id="hp-bar"></i></div><div class="bar xp"><i id="xp-bar"></i></div></div></div>
+      <div class="top-actions"><button id="map-btn" class="glass icon-btn" aria-label="Peta">⌖</button><button id="menu-btn" class="glass icon-btn" aria-label="Menu">☰</button></div>
+    </header>
+    <section class="quest-card glass"><div class="quest-title"><span class="quest-gem">◆</span> QUEST UTAMA <span class="quest-count">01 / 05</span></div><strong>Jejak di Hutan Senja</strong><p>Singkirkan makhluk bayangan di dekat reruntuhan.</p><div class="quest-progress"><span id="quest-progress"></span></div><small id="quest-counter">Bayangan dikalahkan: 0 / 3</small></section>
+    <div class="zone-label"><span class="zone-dot"></span><span>ELDERWOOD</span><small>HUTAN SENJA · ZONA AMAN</small></div>
+    <aside class="mini-map glass"><div class="map-head">PETA WILAYAH <span>↗</span></div><canvas id="minimap" width="140" height="110"></canvas><div class="map-legend"><i></i> Kamu <b>·</b> Area dijelajahi</div></aside>
+    <div class="right-actions">
+      <button id="skill2" class="skill glass"><span class="skill-symbol">✧</span><small>PHASE</small><kbd>2</kbd></button>
+      <button id="skill1" class="skill glass"><span class="skill-symbol">◈</span><small>ARC SLASH</small><kbd>1</kbd></button>
+      <button id="attack" class="attack"><span>⚔</span><small>SERANG</small></button>
+    </div>
+    <div class="left-controls"><div id="joystick" class="joystick"><div class="joy-ring"></div><div id="joy-knob" class="joy-knob"></div></div><div class="control-hint">GERAKKAN</div></div>
+    <footer class="bottom-hud">
+      <div class="quick-slot glass"><span>Ⅰ</span><b>✦</b><small>Ramuan</small></div>
+      <div class="quick-slot glass"><span>Ⅱ</span><b>◉</b><small>Relik</small></div>
+      <div class="bottom-center"><div class="location-pill">✦ <span id="coords">X: 024 · Y: 018</span></div><div class="system-message" id="message">Angin membawa bisikan dari reruntuhan...</div></div>
+      <button id="inventory-btn" class="glass inventory-btn"><span>▤</span><small>TAS</small></button>
+      <button id="character-btn" class="glass inventory-btn"><span>♙</span><small>KARAKTER</small></button>
+    </footer>
+    <div id="toast" class="toast"></div>
+    <section id="panel" class="panel glass hidden"><button id="panel-close" class="close">×</button><div id="panel-content"></div></section>
+    <div id="start-screen" class="start-screen">
+      <div class="start-stars"></div><div class="start-logo">☾</div><div class="eyebrow">A WORLD BENEATH THE ECLIPSE</div><h1>ECLIPSE</h1><h2>REALMS OF RUIN</h2><p>Ketika cahaya terakhir memudar, legenda baru akan terlahir.</p>
+      <div class="class-choices"><button class="class-choice selected" data-class="Spellblade"><span>⚔</span><b>Spellblade</b><small>Seimbang · Pedang sihir</small></button><button class="class-choice" data-class="Arcanist"><span>✧</span><b>Arcanist</b><small>Jarak jauh · Sihir</small></button><button class="class-choice" data-class="Ranger"><span>➶</span><b>Ranger</b><small>Lincah · Serangan cepat</small></button></div>
+      <button id="enter-world" class="enter-btn">MASUKI DUNIA <span>→</span></button><small class="start-foot">PROTOTIPE OFFLINE · DATA LOKAL</small>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
