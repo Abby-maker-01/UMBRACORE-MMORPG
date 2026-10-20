@@ -1,0 +1,6 @@
+{
+  "appId": "com.eclipse.realmsruin",
+  "appName": "ECLIPSE: Realms of Ruin",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

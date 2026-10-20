@@ -1,0 +1,17 @@
+{
+  "name": "eclipse-eternal-realms",
+  "version": "1.1.0",
+  "private": true,
+  "description": "ECLIPSE isometric dark fantasy RPG Android prototype",
+  "scripts": {
+    "build": "echo Static game ready",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.2.0"
+  }
+}
